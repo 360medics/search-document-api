@@ -4,7 +4,9 @@ import google.auth.transport.requests
 import google.oauth2.id_token
 
 
-URL = "https://europe-west1-data-api-dev-55313450491.cloudfunctions.net/HandleToolsUpsert"  # noqa: E501
+URL = (
+    "https://europe-west1-data-api-dev-55313450491.cloudfunctions.net/HandleToolsUpsert"
+)
 key = "/Users/louisgabilly/Documents/search-document-api/settings/key.json"
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = key
 
