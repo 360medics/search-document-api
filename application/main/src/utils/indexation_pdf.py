@@ -16,9 +16,11 @@ def createTokenForGCP(audience):
     return google.oauth2.id_token.fetch_id_token(auth_req, audience)
 
 
+TOKEN = createTokenForGCP(URL)
+HEADERS = {"Authorization": f"Bearer {TOKEN}"}
+
+
 def index_pdf_to_elasticsearch(tool_name: str, id: int, url: str, title: str):
-    token = createTokenForGCP(URL)
-    headers = {"Authorization": f"Bearer {token}"}
 
     d = {
         "name": f"{tool_name}",
@@ -30,7 +32,7 @@ def index_pdf_to_elasticsearch(tool_name: str, id: int, url: str, title: str):
         "crawled": True,
     }
 
-    resp = requests.post(URL, headers=headers, json=d)
+    resp = requests.post(URL, headers=HEADERS, json=d)
     return resp.json()
 
 
