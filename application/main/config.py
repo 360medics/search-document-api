@@ -8,12 +8,7 @@ from pydantic import BaseSettings, Field, BaseModel
 class AppConfig(BaseModel):
     """Application configurations."""
 
-    VAR_A: int = 33
-    VAR_B: float = 22.0
-
     # question classification settings
-    SPACY_MODEL_IN_USE: str = "en_core_web_sm"
-
     # all the directory level information defined at app config level
     # we do not want to pollute the env level config with these information
     # this can change on the basis of usage
@@ -63,9 +58,6 @@ class GlobalConfig(BaseSettings):
     LOG_LEVEL: Optional[str] = None
 
     DB: Optional[str] = None
-
-    MOBILENET_V2: Optional[str] = None
-    INCEPTION_V3: Optional[str] = None
 
     class Config:
         """Loads the dotenv file."""

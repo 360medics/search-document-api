@@ -115,6 +115,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+.vscode/
 
 # Spyder project settings
 .spyderproject
@@ -151,3 +152,4 @@ api_template/logs/fast_api.log
 !/.idea/
 /api_template/logs/
 /api_template/models/
+B

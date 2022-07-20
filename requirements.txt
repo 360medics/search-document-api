@@ -2,3 +2,5 @@ fastapi
 uvicorn
 pyyaml
 pre-commit
+python-dotenv
+elasticsearch
