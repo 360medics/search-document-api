@@ -7,7 +7,9 @@ router = APIRouter(prefix="/medg_match")
 
 
 @router.get("/")
-async def question_classification(input_text: str, prescription: str):
+async def question_classification(
+    input_text: str | None = None, prescription: str | None = None
+):
     question_type = medg_document_service.match(
         input_text=input_text, prescription=prescription
     )
