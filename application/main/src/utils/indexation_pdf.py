@@ -40,14 +40,18 @@ d = {
     "toolId": 9999999,
     "source": "https://d218dw8cc3oete.cloudfront.net/defi-has/Publication_HAS/EvaluationDesPratiques/c_2874187/c_2032151/2018-10-09_note_de_cadrage_coordination_mg_psy.pdf",  # noqa: E501
     "url": "https://d218dw8cc3oete.cloudfront.net/defi-has/Publication_HAS/EvaluationDesPratiques/c_2874187/c_2032151/2018-10-09_note_de_cadrage_coordination_mg_psy.pdf",  # noqa: E501
-    "title": "Note de cadrage MG psy 2018",  # PDF Name
+    "title": "COMMISSION DE LA TRANSPARENCE",  # PDF Name
     "crawled": True,
 }
 
 
 if __name__ == "__main__":
 
-    token = createTokenForGCP(URL)
-    headers = {"Authorization": f"Bearer {token}"}
-    resp = requests.post(URL, headers=headers, json=d)
-    print(resp.json())
+    resp = index_pdf_to_elasticsearch(
+        tool_name="Défi HAS",
+        id="externe",
+        url="https://d218dw8cc3oete.cloudfront.net/defi-has/Publication_HAS/EvaluationDesPratiques/c_2874187/c_2032151/2018-10-09_note_de_cadrage_coordination_mg_psy.pdf",  # noqa: E501
+        title="COMMISSION DE LA TRANSPARENCE",
+    )
+
+    print(resp)
