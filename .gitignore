@@ -147,7 +147,6 @@ api_template/application/main/utility/manager/__pycache__/
 
 api_template/logs/fast_api.log
 .idea/
-.vscode/
 
 !/.idea/
 /api_template/logs/
