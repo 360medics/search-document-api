@@ -1,0 +1,35 @@
+{
+    "sex": "Femme",
+    "DDN": "1965-07-21",
+    "Consultations": [
+        {
+            "Date_consultation": "2001-11-21",
+            "Text": "a chaque fois qu'elle a ses r\u00e8gles douleur de la jambe droite \u00e0 type de pesanteur, jambe parfois dure mais pas gonfl\u00e9e / Pas de prescription"
+        },
+        {
+            "Date_consultation": "2010-01-28",
+            "Text": "son papa d\u00e9compense AT 1 semaine / Pas de prescription"
+        },
+        {
+            "Date_consultation": "2010-02-17",
+            "Resultat_consultation": "DEPRESSION (C/N) / TRISTESSE - DOULEUR MORALE (dans le regard ou le faci\u00e8s) / perte d'int\u00e9r\u00eat ou de plaisir / autod\u00e9valuation / id\u00e9e(s) suicidaire(s) / TROUBLES DU SOMMEIL - / insomnie / BAISSE DES ACTIVITES / physiques (asth\u00e9nie, sexe, app\u00e9tit, etc.) / psychiques (parole, m\u00e9moire, concentration, etc.) / BAISSE DES FONCTIONS DE RELATION SOCIALE / moyenne / ABSENCE DE TROUBLE DE LA PERSONNALITE",
+            "Prescription": "PROZAC / LEXOMYL"
+        },
+        {
+            "Date_consultation": "2011-03-23",
+            "Resultat_consultation": "REACTION A SITUATION EPROUVANTE (B/N) / Sant\u00e9 du p\u00e8re / EXPRESSION d\u2019un \" MAL ETRE \" (avec reviviscence fr\u00e9quente de l\u2019\u00e9preuve d\u00e9clenchante) / manifestations anxieuses / Arr\u00eat(s) de travail / EPREUVE DECLENCHANTE de MOINS de 6 MOIS",
+            "Text": "Arr\u00eat de Travail : 23/03/2011 - 27/03/2011 : 5 jours / familiale (conflit, s\u00e9paration, deuil, etc. A pr\u00e9ciser en commentaire) / En cours de divorce / Pas de prescription"
+        },
+        {
+            "Date_consultation": "2021-02-01",
+            "Resultat_consultation": "DEPRESSION (C/N) / .++++ DOULEUR MORALE / autod\u00e9valuation / tristesse / .++++ INHIBITION (BAISSE OU DIMINUTION) / de l\u2019activit\u00e9 physique (asth\u00e9nie, sexe, app\u00e9tit) / de l\u2019activit\u00e9 psychique (parole, m\u00e9moire, concentration) / des fonctions de relations sociales / .++++ TROUBLES DU SOMMEIL / insomnie / .++++ ABSENCE DE TROUBLE DE LA PERSONNALIT\u00c9 / .++++ \u00c9VOLUANT DEPUIS 15 JOURS AU MOINS / anxi\u00e9t\u00e9 / r\u00e9cidive ",
+            "Text": "Arr\u00eat(s) de travail / Arr\u00eat de Travail : 01/02/2021 - 28/02/2021 : 28 jours / Veut pas voir psy / Demande \u00e0 reprendre ancien traitement",
+            "Prescription": "PROZAC / LEXOMYL"
+        },
+        {
+            "Date_consultation": "2021-10-18",
+            "Resultat_consultation": "REACTION A SITUATION EPROUVANTE (B/N) / s'est fait tap\u00e9 par son ex\"nouveau\" copain / .++++ EXPRESSION D\u2019UN \"MAL \u00caTRE\" (AVEC REVIVISCENCE FR\u00c9QUENTE DE L\u2019\u00c9PREUVE D\u00c9CLENCHANTE) / manifestations anxieuses",
+            "Prescription": "PAROXETINE"
+        }
+    ]
+}
