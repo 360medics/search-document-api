@@ -25,4 +25,4 @@ app.add_middleware(
 
 @app.on_event("shutdown")
 async def app_shutdown():
-    print("On App Shutdown i will be called.")
+    print("On App Shutdown.")
