@@ -1,27 +1,26 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.routing import APIRouter
 
-from application.initializer import IncludeAPIRouter
-from application.main.config import settings
-
-
-def get_application():
-    _app = FastAPI(
-        title=settings.API_NAME,
-        description=settings.API_DESCRIPTION,
-        version=settings.API_VERSION,
-    )
-    _app.include_router(IncludeAPIRouter())
-    _app.add_middleware(
-        CORSMiddleware,
-        allow_credentials=False,
-        allow_methods=["*"],
-        allow_headers=["*"],
-    )
-    return _app
+from application.main.routers.medg_document_matching import router as response_medg
+from config import Config
 
 
-app = get_application()
+router = APIRouter()
+router.include_router(response_medg, prefix="/api/v1")
+
+app = FastAPI(
+    title=Config.API_NAME,
+    description=Config.API_DESCRIPTION,
+    version=Config.API_VERSION,
+)
+app.include_router(router)
+app.add_middleware(
+    CORSMiddleware,
+    allow_credentials=False,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 @app.on_event("shutdown")
