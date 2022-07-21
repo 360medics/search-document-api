@@ -28,8 +28,9 @@ class MedGDocumentService:
         if (consult.Text or consult.Resultat_consultation) and consult.Prescription:
             text = consult.Text if consult.Text else consult.Resultat_consultation
             return match_with_prescription(self.es_client, text, consult.Prescription)
-        elif consult.Text:
-            return match(self.es_client, consult.Text)
+        elif consult.Text or consult.Resultat_consultation:
+            text = consult.Text if consult.Text else consult.Resultat_consultation
+            return match(self.es_client, text)
         elif consult.Prescription:
             return match(self.es_client, consult.Prescription)
         return []
