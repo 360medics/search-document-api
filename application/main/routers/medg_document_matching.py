@@ -23,7 +23,7 @@ async def medg_document_route(medgdoc: MedGDocument):
                 "accident_travail": "string",
                 "biometrie": "string",
                 "biologie": "string",
-                "date_consultation": datetime.date
+                "date_consultation": datetime.dat
                 }
             ],
             "gender": ["Homme", "Femme"]
