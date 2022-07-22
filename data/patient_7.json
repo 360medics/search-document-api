@@ -1,1 +1,11 @@
-{"sex": "Homme", "DDN": "1993-03-09", "Consultations": [{"Date_consultation": "2022-08-07", "Resultat_consultation": "DIARRHEE-VOMISSEMENT (B/N) / salmonellose / SELLES FREQUENTES, MOLLES/LIQUIDES / RECENTES / NAUSEE / VOMISSEMENT / glaires / fi\u00e8vre / Arr\u00eat(s) de travail / HEMORROIDE (D/N) / .++++ DILATATION VEINEUSE DE LA R\u00c9GION ANALE / ext\u00e9rioris\u00e9e, saillante / douleur / saignement de sang rouge enrobant les selles ou survenant juste apr\u00e8s elles", "Text": "Arr\u00eat de Travail : 07/08/2022 - 16/08/2022 : 10 jours / 38,, 5\u00b0C hier soir"}]}
+{
+    "sex": "Homme",
+    "DDN": "1993-03-09",
+    "Consultations": [
+        {
+            "Date_consultation": "2022-08-07",
+            "Resultat_consultation": "DIARRHEE-VOMISSEMENT (B/N) / salmonellose / SELLES FREQUENTES, MOLLES/LIQUIDES / RECENTES / NAUSEE / VOMISSEMENT / glaires / fi\u00e8vre / Arr\u00eat(s) de travail / HEMORROIDE (D/N) / .++++ DILATATION VEINEUSE DE LA R\u00c9GION ANALE / ext\u00e9rioris\u00e9e, saillante / douleur / saignement de sang rouge enrobant les selles ou survenant juste apr\u00e8s elles",
+            "Text": "Arr\u00eat de Travail : 07/08/2022 - 16/08/2022 : 10 jours / 38,, 5\u00b0C hier soir"
+        }
+    ]
+}

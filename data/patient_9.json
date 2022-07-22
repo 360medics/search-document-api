@@ -1,1 +1,16 @@
-{"sex": "Homme", "DDN": "1957-07-10", "Consultations": [{"Date_consultation": "2016-04-16", "Resultat_consultation": "BRONCHITE CHRONIQUE (BRONCHITE CHRONIQUE = TOUX + EXPECTORATION AU MOINS 3 MOIS PAR AN DEPUIS 2 ANS) ", "Text": "refuse d\u2019arr\u00eater de fumer"}, {"Date_consultation": "2022-04-23", "Resultat_consultation": "BRONCHITE AIGU\u00cb (C/P) / .++++ TOUX / .++++ R\u00c2LES RONFLANTS DIFFUS MODIFI\u00c9S PAR LA TOUX / .++++ BRONCHITE CHRONIQUE (BRONCHITE CHRONIQUE = TOUX + EXPECTORATION AU MOINS 3 MOIS PAR AN DEPUIS 2 ANS) ", "Text": "r\u00e2les sibilants (surtout au d\u00e9but de l'\u00e9pisode) / 38\u00b0C"}]}
+{
+    "sex": "Homme",
+    "DDN": "1957-07-10",
+    "Consultations": [
+        {
+            "Date_consultation": "2016-04-16",
+            "Resultat_consultation": "BRONCHITE CHRONIQUE (BRONCHITE CHRONIQUE = TOUX + EXPECTORATION AU MOINS 3 MOIS PAR AN DEPUIS 2 ANS) ",
+            "Text": "refuse d\u2019arr\u00eater de fumer"
+        },
+        {
+            "Date_consultation": "2022-04-23",
+            "Resultat_consultation": "BRONCHITE AIGU\u00cb (C/P) / .++++ TOUX / .++++ R\u00c2LES RONFLANTS DIFFUS MODIFI\u00c9S PAR LA TOUX / .++++ BRONCHITE CHRONIQUE (BRONCHITE CHRONIQUE = TOUX + EXPECTORATION AU MOINS 3 MOIS PAR AN DEPUIS 2 ANS) ",
+            "Text": "r\u00e2les sibilants (surtout au d\u00e9but de l'\u00e9pisode) / 38\u00b0C"
+        }
+    ]
+}
