@@ -1,13 +1,13 @@
 from fastapi.routing import APIRouter
 
 from application.main.src.models.data_models import MedGDocument
-from application.initializer import medg_document_service
+from application.main.services.medg_document_matching import medg_document_service
 
 router = APIRouter(prefix="/medg_match")
 
 
 @router.post("/")
-async def medg_document_route(medgdoc: MedGDocument):
+async def medg_document_route(medgdoc: MedGDocument, explain: bool = "False"):
     """
 
     Args:
@@ -32,5 +32,5 @@ async def medg_document_route(medgdoc: MedGDocument):
     Returns:
         pdf document: WIP
     """
-    document_res = medg_document_service.match(medgdoc)
+    document_res = medg_document_service.match(medgdoc, explain)
     return document_res

@@ -1,4 +1,4 @@
-from elasticsearch import Elasticsearch
+from application.main.services.es_service import es_client, indices_client
 
 STANDARD_SOURCE = [
     "name",
@@ -13,7 +13,7 @@ STANDAR_FILTER = {
 }
 
 
-def match(es_client: Elasticsearch, input_text: str) -> str:
+def match_text(input_text: str, explain: bool = False) -> str:
     res = es_client.search(
         index="tools",
         body={
@@ -25,12 +25,13 @@ def match(es_client: Elasticsearch, input_text: str) -> str:
             },
             "_source": STANDARD_SOURCE,
         },
+        explain=explain,
     )
     return res["hits"]["hits"]
 
 
 def match_with_prescription(
-    es_client: Elasticsearch, input_text: str, prescription: str
+    input_text: str, prescription: str, explain: bool = False
 ) -> str:
     res = es_client.search(
         index="tools",
@@ -46,5 +47,20 @@ def match_with_prescription(
             },
             "_source": STANDARD_SOURCE,
         },
+        explain=explain,
     )
     return res["hits"]["hits"]
+
+
+def analyze_es_text(text: str, analyzer: str = "custom_analyzer"):
+    return indices_client.analyze(
+        index="tools",
+        body={
+            "analyzer": analyzer,
+            "text": text,
+        },
+    )
+
+
+def explain_es_match(id: str):
+    return es_client.explain(index="tools", id=id, source=STANDARD_SOURCE)
