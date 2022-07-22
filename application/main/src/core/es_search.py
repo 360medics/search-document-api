@@ -9,7 +9,9 @@ STANDARD_SOURCE = [
     "document.url",
 ]
 STANDAR_FILTER = {
-    "bool": {"should": [{"term": {"id": 921}}, {"term": {"id": 9999999}}]}
+    "bool": {
+        "should": [{"term": {"id": 921}}, {"term": {"id": 9999999}}],
+    }
 }
 
 
@@ -43,6 +45,11 @@ def match_with_prescription(
                         {"match": {"content": f"{prescription}"}},
                     ],
                     "filter": STANDAR_FILTER,
+                    "must_not": {
+                        "match_phrase": {
+                            "pdf_data.extracted_title": "COMMISSION DE LA TRANSPARENCE"
+                        },
+                    },
                 }
             },
             "_source": STANDARD_SOURCE,

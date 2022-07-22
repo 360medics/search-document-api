@@ -18,9 +18,9 @@ class MedGDocumentService:
 
     def match(self, document: MedGDocument, explain: bool = False) -> str:
         document = self.test_patient if self.test_patient else document
-        consult = document.Consultations[-1]
+        consult = document.Consultations[-2]
         if (consult.Text or consult.Resultat_consultation) and consult.Prescription:
-            text = consult.Text if consult.Text else consult.Resultat_consultation
+            text = consult.Text + consult.Resultat_consultation
             return match_with_prescription(text, consult.Prescription, explain=explain)
         elif consult.Text or consult.Resultat_consultation:
             text = consult.Text if consult.Text else consult.Resultat_consultation
