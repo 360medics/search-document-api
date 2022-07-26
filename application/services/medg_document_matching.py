@@ -1,6 +1,10 @@
 from application.src.models.data_models import MedGDocument
-from application.src.core.es_search import match_text, match_with_prescription
-
+from application.src.core.es_search import (
+    match_text,
+    match_texts,
+    match_texts_with_prescription,
+)
+from application.src.core.preprocessing import split_text
 import logging
 
 from config import Config
@@ -19,12 +23,16 @@ class MedGDocumentService:
     def match(self, document: MedGDocument, explain: bool = False) -> str:
         document = self.test_patient if self.test_patient else document
         consult = document.Consultations[-2]
-        if (consult.Text or consult.Resultat_consultation) and consult.Prescription:
-            text = consult.Text + consult.Resultat_consultation
-            return match_with_prescription(text, consult.Prescription, explain=explain)
-        elif consult.Text or consult.Resultat_consultation:
-            text = consult.Text if consult.Text else consult.Resultat_consultation
-            return match_text(text, explain=explain)
+        if consult.Resultat_consultation and consult.Prescription:
+            text = consult.Resultat_consultation
+            text = split_text(text)
+            return match_texts_with_prescription(
+                text, consult.Prescription, explain=explain
+            )
+        elif consult.Resultat_consultation:
+            text = consult.Resultat_consultation
+            text = split_text(text)
+            return match_texts(text, explain=explain)
         elif consult.Prescription:
             return match_text(consult.Prescription, explain=explain)
         return []

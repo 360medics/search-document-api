@@ -1,4 +1,8 @@
 from application.services.es_service import es_client, indices_client
+from application.src.core.preprocessing import multiple_match_phrase
+import logging
+
+logger = logging.getLogger("uvicorn.error")
 
 STANDARD_SOURCE = [
     "name",
@@ -8,10 +12,14 @@ STANDARD_SOURCE = [
     "pdf_data.extracted_title",
     "document.url",
 ]
-STANDAR_FILTER = {
+STANDARD_FILTER = {
     "bool": {
         "should": [{"term": {"id": 921}}, {"term": {"id": 9999999}}],
     }
+}
+
+STANDARD_MUST_NOT = {
+    "match_phrase": {"pdf_data.extracted_title": "COMMISSION DE LA TRANSPARENCE"},
 }
 
 
@@ -21,8 +29,52 @@ def match_text(input_text: str, explain: bool = False) -> str:
         body={
             "query": {
                 "bool": {
-                    "must": [{"match": {"content": f"{input_text}"}}],
-                    "filter": STANDAR_FILTER,
+                    "must": [{"match": {"content": input_text}}],
+                    "filter": STANDARD_FILTER,
+                    "must_not": STANDARD_MUST_NOT,
+                }
+            },
+            "_source": STANDARD_SOURCE,
+        },
+        explain=explain,
+    )
+    return res["hits"]["hits"]
+
+
+def match_texts(input_texts: list[str], explain: bool = False) -> str:
+    logger.info(multiple_match_phrase(input_texts))
+    res = es_client.search(
+        index="tools",
+        body={
+            "query": {
+                "bool": {
+                    "should": multiple_match_phrase(input_texts),
+                    "filter": STANDARD_FILTER,
+                    "must_not": STANDARD_MUST_NOT,
+                }
+            },
+            "_source": STANDARD_SOURCE,
+        },
+        explain=explain,
+    )
+    return res["hits"]["hits"]
+
+
+def match_texts_with_prescription(
+    input_texts: list[str], prescription: str, explain: bool = False
+) -> str:
+    logger.info(multiple_match_phrase(input_texts))
+    res = es_client.search(
+        index="tools",
+        body={
+            "query": {
+                "bool": {
+                    "must": [
+                        {"bool": {"should": multiple_match_phrase(input_texts)}},
+                        {"match": {"content": prescription}},
+                    ],
+                    "filter": STANDARD_FILTER,
+                    "must_not": STANDARD_MUST_NOT,
                 }
             },
             "_source": STANDARD_SOURCE,
@@ -41,15 +93,11 @@ def match_with_prescription(
             "query": {
                 "bool": {
                     "must": [
-                        {"match": {"content": f"{input_text}"}},
-                        {"match": {"content": f"{prescription}"}},
+                        {"match": {"content": input_text}},
+                        {"match": {"content": prescription}},
                     ],
-                    "filter": STANDAR_FILTER,
-                    "must_not": {
-                        "match_phrase": {
-                            "pdf_data.extracted_title": "COMMISSION DE LA TRANSPARENCE"
-                        },
-                    },
+                    "filter": STANDARD_FILTER,
+                    "must_not": STANDARD_MUST_NOT,
                 }
             },
             "_source": STANDARD_SOURCE,
