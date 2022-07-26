@@ -4,3 +4,4 @@ pyyaml
 pre-commit
 python-dotenv
 elasticsearch
+pytest

@@ -1,5 +1,5 @@
 from datetime import date
-from typing import Literal, List
+from typing import Literal
 from pydantic import BaseModel
 
 
@@ -15,5 +15,5 @@ class Consulation(BaseModel):
 
 class MedGDocument(BaseModel):
     DDN: date
-    Consultations: List[Consulation]
+    Consultations: list[Consulation]
     sex: Literal["Homme", "Femme"]
