@@ -1,4 +1,4 @@
-from application.main.services.es_service import es_client, indices_client
+from application.services.es_service import es_client, indices_client
 
 STANDARD_SOURCE = [
     "name",

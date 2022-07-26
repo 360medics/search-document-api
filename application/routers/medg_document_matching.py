@@ -1,7 +1,7 @@
 from fastapi.routing import APIRouter
 
-from application.main.src.models.data_models import MedGDocument
-from application.main.services.medg_document_matching import medg_document_service
+from application.src.models.data_models import MedGDocument
+from application.services.medg_document_matching import medg_document_service
 
 router = APIRouter(prefix="/medg_match")
 

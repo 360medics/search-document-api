@@ -1,4 +1,4 @@
-from application.main.src.utils.indexation_pdf import index_pdf_to_elasticsearch
+from application.src.utils.indexation_pdf import index_pdf_to_elasticsearch
 from tqdm import tqdm
 
 with open("data/pdf_list.txt", "r") as f:

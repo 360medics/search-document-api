@@ -1,5 +1,5 @@
-from application.main.src.models.data_models import MedGDocument
-from application.main.src.core.es_search import match_text, match_with_prescription
+from application.src.models.data_models import MedGDocument
+from application.src.core.es_search import match_text, match_with_prescription
 
 import logging
 
