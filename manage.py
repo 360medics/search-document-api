@@ -3,7 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.routing import APIRouter
 
 from application.routers.medg_document_matching import router as response_medg
-from application.routers.utils_router import router as response_utils
+from application.routers.es_service import router as response_utils
 
 from config import Config
 

@@ -7,5 +7,6 @@ def split_text(text: str) -> str:
 
 
 def compute_age(DDN: date, Date_consultation: date) -> int:
+    assert DDN <= Date_consultation
     delta = Date_consultation - DDN
     return delta.days // 365
