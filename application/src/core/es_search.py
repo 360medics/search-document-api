@@ -23,24 +23,6 @@ STANDARD_MUST_NOT = {
 }
 
 
-def match_text(input_text: str, explain: bool = False) -> str:
-    res = es_client.search(
-        index="tools",
-        body={
-            "query": {
-                "bool": {
-                    "must": [{"match": {"content": input_text}}],
-                    "filter": STANDARD_FILTER,
-                    "must_not": STANDARD_MUST_NOT,
-                }
-            },
-            "_source": STANDARD_SOURCE,
-        },
-        explain=explain,
-    )
-    return res["hits"]["hits"]
-
-
 def match_texts(input_texts: list[str], explain: bool = False) -> str:
     logger.info(multiple_match_phrase(input_texts))
     res = es_client.search(
@@ -60,8 +42,8 @@ def match_texts(input_texts: list[str], explain: bool = False) -> str:
     return res["hits"]["hits"]
 
 
-def match_texts_with_prescription(
-    input_texts: list[str], prescription: str, explain: bool = False
+def match_texts_with_prescriptions(
+    input_texts: list[str], prescriptions: list[str], explain: bool = False
 ) -> str:
     logger.info(multiple_match_phrase(input_texts))
     res = es_client.search(
@@ -71,30 +53,7 @@ def match_texts_with_prescription(
                 "bool": {
                     "must": [
                         {"bool": {"should": multiple_match_phrase(input_texts)}},
-                        {"match": {"content": prescription}},
-                    ],
-                    "filter": STANDARD_FILTER,
-                    "must_not": STANDARD_MUST_NOT,
-                }
-            },
-            "_source": STANDARD_SOURCE,
-        },
-        explain=explain,
-    )
-    return res["hits"]["hits"]
-
-
-def match_with_prescription(
-    input_text: str, prescription: str, explain: bool = False
-) -> str:
-    res = es_client.search(
-        index="tools",
-        body={
-            "query": {
-                "bool": {
-                    "must": [
-                        {"match": {"content": input_text}},
-                        {"match": {"content": prescription}},
+                        {"match": {"content": " ".join(prescriptions)}},
                     ],
                     "filter": STANDARD_FILTER,
                     "must_not": STANDARD_MUST_NOT,

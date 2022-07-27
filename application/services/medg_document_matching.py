@@ -1,8 +1,8 @@
+from application.src.core.search_api import get_medics
 from application.src.models.data_models import MedGDocument
 from application.src.core.es_search import (
-    match_text,
     match_texts,
-    match_texts_with_prescription,
+    match_texts_with_prescriptions,
 )
 from application.src.core.preprocessing import split_text
 import logging
@@ -26,15 +26,19 @@ class MedGDocumentService:
         if consult.Resultat_consultation and consult.Prescription:
             text = consult.Resultat_consultation
             text = split_text(text)
-            return match_texts_with_prescription(
-                text, consult.Prescription, explain=explain
+            prescriptions = split_text(consult.Prescription)
+            medics_res = [get_medics(prescription) for prescription in prescriptions]
+            es_res = match_texts_with_prescriptions(
+                text, prescriptions, explain=explain
             )
+            return medics_res + es_res
         elif consult.Resultat_consultation:
             text = consult.Resultat_consultation
             text = split_text(text)
             return match_texts(text, explain=explain)
         elif consult.Prescription:
-            return match_text(consult.Prescription, explain=explain)
+            prescriptions = split_text(consult.Prescription)
+            return [get_medics(prescription) for prescription in prescriptions]
         return []
 
 

@@ -1,5 +1,4 @@
 from fastapi.routing import APIRouter
-
 from application.src.core.es_search import analyze_es_text, explain_es_match
 
 router = APIRouter(prefix="/utils")
