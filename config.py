@@ -6,3 +6,4 @@ class Config:
     API_DEBUG_MODE = True
     MEDICS_URL_API = "https://search-medics-faq-api-dev-jwtwih6oja-ew.a.run.app"
     SVE_URL_API = "https://search-vector-engine-api-dev-jwtwih6oja-ew.a.run.app"
+    baseURI = "https://guepard-rd360.360medics.com"

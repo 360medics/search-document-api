@@ -2,8 +2,9 @@ from datetime import date
 import re
 
 
+# [^\w\s]
 def split_text(text: str) -> str:
-    return list(filter(None, map(str.strip, re.split(r"[^\w\s]", text))))
+    return list(filter(None, map(str.strip, re.split(r"\+|\/", text))))
 
 
 def compute_age(DDN: date, Date_consultation: date) -> int:

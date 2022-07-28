@@ -17,7 +17,7 @@ class MedGDocumentService:
         if Config.API_DEBUG_MODE:
             logger.setLevel(logging.DEBUG)
             self.test_patient = MedGDocument.parse_raw(
-                open("data/patient_4.json").read()
+                open("data/patient_8.json").read()
             )
 
     def match(self, document: MedGDocument, explain: bool = False) -> str:
