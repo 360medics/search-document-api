@@ -1,7 +1,8 @@
-import requests
 import json
-from config import Config
 import logging
+
+import requests
+from config import Config
 
 logger = logging.getLogger("uvicorn.error")
 
@@ -15,7 +16,7 @@ def get_search(text):
         "offset": 0,
         "limit": 10,
         "page": 1,
-        "courtry": "FR",
+        "country": "FR",
         "skiprcppart": 0,
     }
     body = {

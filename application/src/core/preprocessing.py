@@ -1,15 +1,15 @@
-from datetime import date
 import re
+from datetime import date
 
 
 # [^\w\s]
 def split_text(text: str) -> str:
-    return list(filter(None, map(str.strip, re.split(r"\+|\/", text))))
+    return list(filter(None, map(str.strip, re.split(r"\+|\/", text)))) if text else ""
 
 
-def compute_age(DDN: date, Date_consultation: date) -> int:
-    assert DDN <= Date_consultation
-    delta = Date_consultation - DDN
+def compute_age(ddn: date, date_consultation: date) -> int:
+    assert ddn <= date_consultation
+    delta = date_consultation - ddn
     return delta.days // 365
 
 
