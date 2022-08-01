@@ -4,7 +4,9 @@ from datetime import date
 
 # [^\w\s]
 def split_text(text: str) -> str:
-    return list(filter(None, map(str.strip, re.split(r"\+|\/", text)))) if text else ""
+    return (
+        list(filter(None, map(str.strip, re.split(r"\+|\/|\;", text)))) if text else ""
+    )
 
 
 def compute_age(ddn: date, date_consultation: date) -> int:
