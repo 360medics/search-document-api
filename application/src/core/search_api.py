@@ -2,6 +2,7 @@ import json
 import logging
 
 import requests
+
 from config import Config
 
 logger = logging.getLogger("uvicorn.error")
@@ -33,7 +34,6 @@ def get_search(text):
         "Authorization": "Token LCCDBS0TykGkGfY8UYGkBNnVS4AFqUOSavs3jVrN",
         "X-User-Api-Key": "1ade9001222a075902bc1ea12e0dc643",
     }
-    logger.info(f"{text}")
     resp = requests.post(
         f"{Config.baseURI}/v3/search/tool", params=params, json=body, headers=headers
     )
@@ -42,7 +42,6 @@ def get_search(text):
 
 def get_medics(text):
     params = {"lang": "fr", "q": text, "medics_area": "ansm", "offset": 0, "limit": 1}
-    logger.info(text)
     resp = requests.post(
         f"{Config.MEDICS_URL_API}/rcp/v0",
         params=params,

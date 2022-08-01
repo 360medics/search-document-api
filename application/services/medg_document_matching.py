@@ -9,6 +9,8 @@ logger = logging.getLogger("uvicorn.error")
 
 
 class MedGDocumentService:
+    """_Service for processing general medicin document"""
+
     def __init__(self) -> None:
         if Config.API_DEBUG_MODE:
             logger.setLevel(logging.DEBUG)
@@ -18,8 +20,19 @@ class MedGDocumentService:
 
     def match(self, document: MedGDocument) -> str:
         document = self.test_patient if self.test_patient else document
-        consult = document.Consultations[-1]
-        texts = consult.Resultat_consultation
+        texts = ""
+        index_consult = 1
+        while len(texts) <= 3 or len(document.Consultations) < index_consult:
+            consult = document.Consultations[-index_consult]
+            texts = (
+                consult.Resultat_consultation
+                if consult.Resultat_consultation
+                else consult.Text
+            )
+            logger.info(texts)
+            index_consult += 1
+
+        texts = "" if len(texts) <= 3 else texts
         prescriptions = split_text(consult.Prescription)
         medics_res = [get_medics(prescription) for prescription in prescriptions]
         search_res = get_search(texts)
