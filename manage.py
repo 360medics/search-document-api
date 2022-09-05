@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.routing import APIRouter
 
 from application.routers.medg_document_matching import router as response_medg
+from application.routers.rcp_document_matching import router as response_frcp
 from application.routers.es_service import router as response_utils
 
 from config import Config
@@ -10,6 +11,7 @@ from config import Config
 
 router = APIRouter()
 router.include_router(response_medg, prefix="/api/v1")
+router.include_router(response_frcp, prefix="/api/v1")
 router.include_router(response_utils, prefix="/api/v1")
 
 app = FastAPI(
