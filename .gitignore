@@ -153,3 +153,5 @@ api_template/logs/fast_api.log
 /api_template/logs/
 /api_template/models/
 B
+
+*.ipynb
