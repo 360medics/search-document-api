@@ -145,6 +145,7 @@ cython_debug/
 api_template/application/main/utility/manager/__pycache__/
 .DS_Store
 *.xml
+*.pkl
 
 api_template/logs/fast_api.log
 .idea/
@@ -153,5 +154,3 @@ api_template/logs/fast_api.log
 /api_template/logs/
 /api_template/models/
 B
-
-*.ipynb
