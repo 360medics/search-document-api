@@ -18,7 +18,7 @@ class MedGDocumentService:
                 open("data/patient_0.json").read()
             )
 
-    def match(self, document: MedGDocument) -> str:
+    def match(self, document: MedGDocument) -> list:
         document = self.test_patient if self.test_patient else document
         texts = ""
         index_consult = 1

@@ -22,16 +22,16 @@ def get_search(text):
     }
     body = {
         "body": {
-            "id": 223046,
+            "id": 2,
+            "specialty_id": 10,
             "profession_id": 2,
-            "roles": ["ROLE_EXPERT", "ROLE_BETA_USER", "ROLE_USER"],
-            "specialty_id": 26,
             "title": "DOCTOR",
+            "roles": ["ROLE_EXPERT"],
         }
     }
     headers = {
         "Content-Type": "application/json",
-        "Authorization": "Token LCCDBS0TykGkGfY8UYGkBNnVS4AFqUOSavs3jVrN",
+        "Authorization": "Token 4SJxKlCP9ucc6pzVXVv9zurURQ96Um7d",
         "X-User-Api-Key": "1ade9001222a075902bc1ea12e0dc643",
     }
     resp = requests.post(

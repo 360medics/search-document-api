@@ -1,0 +1,1202 @@
+<ClinicalDocument xsi:schemaLocation="urn:hl7-org:v3 schematron/infrastructure/cda/CDA.xsd" xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <realmCode code="FR" />
+  <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040" />
+  <templateId root="2.16.840.1.113883.2.8.2.1" />
+  <templateId root="1.2.250.1.213.1.1.1.1" />
+  <templateId root="1.2.250.1.213.1.1.1.8" />
+  <templateId root="2.25.35414841612607431854917023057881449755.4.1.1" />
+  <id root="2.25.35414841612607431854917023057881449755.7.fake605283" />
+  <code code="34794-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="CR de réunion de concertation pluridisciplinaire" />
+  <title>Un établissement du réseau régional de cancérologie de Nouvelle-Aquitaine</title>
+  <effectiveTime value="20220207123456+0100" />
+  <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" codeSystemName="Confidentiality" displayName="Normal" />
+  <languageCode code="fr-FR" />
+  <recordTarget>
+  	<patientRole>
+      <id root="2.25.35414841612607431854917023057881449755.3.1" extension="fake16352325655" />
+      <addr>
+      	<streetAddressLine>5 av. du Stade de France</streetAddressLine>
+        <streetAddressLine>93218</streetAddressLine>
+        <streetAddressLine>Saint-Denis La Plaine</streetAddressLine>
+      </addr>
+      <telecom nullFlavor="NAV" />
+      <patient>
+        <name>
+          <given>FLORENCE</given>
+          <family qualifier="SP">VENISE</family>
+        </name>
+        <administrativeGenderCode codeSystem="2.16.840.1.113883.5.1" code="F" displayName="Féminin" />
+        <birthTime value="19620625" />
+      </patient>
+    </patientRole>
+  </recordTarget>
+  <author>
+    <time value="20220207123456+0100" />
+    <assignedAuthor>
+      <id root="1.2.250.1.71.4.2.1" extension="8fake3778742" assigningAuthorityName="ASIP Santé" />
+      <code code="G15_10/SM37" displayName="Médecin - Oncologie option radiothérapie (SM)" codeSystem="1.2.250.1.213.1.1.4.5" />
+      <assignedPerson>
+        <name>
+          <given>TYMAR</given>
+          <family>RETIGUE</family>
+          <prefix>Docteur</prefix>
+        </name>
+      </assignedPerson>
+    </assignedAuthor>
+  </author>
+  <custodian>
+    <assignedCustodian>
+      <representedCustodianOrganization>
+        <id root="1.2.250.1.71.4.2.2" extension="1170000000" />
+        <name>Un établissement du réseau régional de cancérologie de Nouvelle-Aquitaine</name>
+      </representedCustodianOrganization>
+    </assignedCustodian>
+  </custodian>
+  <legalAuthenticator>
+    <time value="20220207123456+0100" />
+    <signatureCode code="S" />
+    <assignedEntity>
+      <id root="1.2.250.1.71.4.2.1" extension="fake3778742" />
+      <code code="G15_10/SM37" codeSystem="1.2.250.1.213.1.1.4.5" displayName="Médecin - Oncologie option radiothérapie (SM)" />
+      <assignedPerson>
+        <name>
+          <given>TYMAR</given>
+          <family>RETIGUE</family>
+          <prefix>Docteur</prefix>
+        </name>
+      </assignedPerson>
+    </assignedEntity>
+  </legalAuthenticator>
+  <participant typeCode="INF">
+    <functionCode code="PCP" codeSystem="2.16.840.1.113883.5.88" />
+    <time xsi:type="IVL_TS">
+      <low value="20220207" />
+    </time>
+    <associatedEntity classCode="PROV">
+      <id root="1.2.250.1.71.4.2.1" extension="fake2098332" />
+      <associatedPerson>
+        <name>
+          <family>MORILLE</family>
+          <given>MATTATHIAS</given>
+          <prefix>Docteur</prefix>
+        </name>
+      </associatedPerson>
+    </associatedEntity>
+  </participant>
+  <documentationOf>
+    <serviceEvent>
+      <code code="RCP_060" codeSystem="1.2.250.1.213.1.1.4.2.281" displayName="RCP" codeSystemName="TA_RCP" />
+      <effectiveTime>
+        <low value="20220207123456+0100" />
+      </effectiveTime>
+      <performer typeCode="PRF">
+        <assignedEntity>
+          <id root="1.2.250.1.71.4.2.1" extension="10003778742" />
+          <code code="G15_10/SM37" codeSystem="1.2.250.1.213.1.1.4.5" displayName="Médecin - Oncologie option radiothérapie (SM)" />
+          <assignedPerson>
+            <name>
+              <family>PECHIGNEUX</family>
+              <given>PHIROLI</given>
+              <prefix>Docteur</prefix>
+            </name>
+          </assignedPerson>
+          <representedOrganization>
+            <id root="1.2.250.1.71.4.2.2" extension="1170000087" assigningAuthorityName="ASIP Santé" />
+            <name>HOPITAL SAINT-LOUIS</name>
+          </representedOrganization>
+        </assignedEntity>
+      </performer>
+    </serviceEvent>
+  </documentationOf>
+  <documentationOf>
+    <serviceEvent>
+      <id root="2.25.35414841612607431854917023057881449755.3.2" extension="fake1049943" />
+      <code code="FicheRCP" codeSystem="2.25.35414841612607431854917023057881449755.2.9" displayName="Fiche RCP" codeSystemName="KProcess" />
+    </serviceEvent>
+  </documentationOf>
+  <componentOf>
+    <encompassingEncounter>
+      <templateId root="2.25.35414841612607431854917023057881449755.3.3" extension="20" />
+      <templateId root="2.25.35414841612607431854917023057881449755.3.4" extension="27" />
+      <id root="2.25.35414841612607431854917023057881449755.14.fake348932" />
+      <code code="VR" displayName="Virtuelle" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" />
+      <effectiveTime>
+        <low value="20220207123456+0100" />
+      </effectiveTime>
+      <responsibleParty>
+        <assignedEntity>
+          <id root="1.2.250.1.71.4.2.1" extension="fake3778742" />
+          <code code="G15_10/C43" codeSystem="1.2.250.1.213.1.1.4.5" displayName="Neurologue" />
+          <assignedPerson>
+            <name>
+              <family>LOTI</family>
+	      <given>REPI</given>
+              <prefix>Docteur</prefix>
+            </name>
+          </assignedPerson>
+        </assignedEntity>
+      </responsibleParty>
+      <encounterParticipant typeCode="REF">
+        <assignedEntity>
+          <id root="1.2.250.1.71.4.2.1" extension="fake2727344" />
+          <code code="G15_10/SM37" codeSystem="1.2.250.1.213.1.1.4.5" displayName="Médecin - Oncologie option radiothérapie (SM)" />
+          <assignedPerson>
+            <name>
+              <family>MELCENT</family>
+              <given>TYFE</given>
+              <prefix>Docteur</prefix>
+            </name>
+          </assignedPerson>
+        </assignedEntity>
+      </encounterParticipant>
+      <encounterParticipant typeCode="CON">
+        <assignedEntity>
+          <id root="1.2.250.1.71.4.2.1" extension="fake2703659" />
+          <code code="G15_10/SM44" codeSystem="1.2.250.1.213.1.1.4.5" displayName="Médecin - Radiodiagnostic (SM)" />
+          <assignedPerson>
+            <name>
+              <family>PIERRECHIET</family>
+              <given>ALAIN-JAC</given>
+              <prefix>Docteur</prefix>
+            </name>
+          </assignedPerson>
+        </assignedEntity>
+      </encounterParticipant>
+      <location>
+        <healthCareFacility>
+          <code code="" codeSystem="" displayName="" />
+          <location>
+            <name>HAUTE AUTORITE DE SAINTE</name>
+          </location>
+        </healthCareFacility>
+      </location>
+    </encompassingEncounter>
+  </componentOf>
+  <component>
+    <structuredBody>
+      <component>
+        <section>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.1" />
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.2" />
+          <id root="ID0E6UAGRaisonRecommandation" />
+          <code code="42349-1" displayName="Raison de la recommandation" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+          <title>Motif du passage en RCP</title>
+          <text>
+            <table border="1">
+              <thead>
+                <tr>
+                  <th>Motif</th>
+                  <th>Catégorie</th>
+                  <th>Classe RCP</th>
+                  <th>Commentaire</th>
+                </tr>
+              </thead>
+              <tbody>
+                PremierePropositionDeTraitement
+              </tbody>
+            </table>
+          </text>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN" negationInd="false">
+              <templateId root="2.16.840.1.113883.10.20.1.28" />
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5" />
+              <id root="ID0E6UAGRaisonRecommandationProbleme" />
+              <code code="F-01000" displayName="Problème" codeSystem="1.2.250.1.213.2.12" />
+              <text>
+                <reference value="raison" />
+              </text>
+              <statusCode code="completed" />
+              <effectiveTime>
+                <low value="20110301" />
+              </effectiveTime>
+              <value xsi:type="CD" code="42349-1" displayName="Raison de la recommandation" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
+                <originalText>
+                  <reference value="raison" />
+                </originalText>
+              </value>
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13" />
+              <id root="ID0E6UAGRaisonRecommandationAvisDiagnostique" />
+              <code code="RCP_026" displayName="Avis diagnostique" codeSystem="1.2.250.1.213.1.1.4.2.281" codeSystemName="TA_RCP" />
+              <text>
+                <reference value="#raison-recommandation-avis-diagnostique" />
+              </text>
+              <statusCode code="completed" />
+              <effectiveTime nullFlavor="NAV" />
+              <value xsi:type="BL" value="false" />
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13" />
+              <id root="ID0E6UAGRaisonRecommandationPropositionTraitement" />
+              <code code="RCP_027" displayName="Proposition de traitement (dont ajustement et surveillance)" codeSystem="1.2.250.1.213.1.1.4.2.281" codeSystemName="TA_RCP" />
+              <text>
+                <reference value="#raison-recommandatino-proposition-traitement" />
+              </text>
+              <statusCode code="completed" />
+              <effectiveTime nullFlavor="NAV" />
+              <value xsi:type="BL" value="true" />
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13" />
+              <id root="ID0E6UAGRaisonRecommandationRecours" />
+              <code code="RCP_030" displayName="Recours" codeSystem="1.2.250.1.213.1.1.4.2.281" codeSystemName="TA_RCP" />
+              <text>
+                <reference value="#raison-recommandaion-recours" />
+              </text>
+              <statusCode code="completed" />
+              <effectiveTime nullFlavor="NAV" />
+              <value xsi:type="BL" value="false" />
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13" />
+              <id root="ID0E6UAGRaisonRecommandationOncopediatrie" />
+              <code code="RCP_094" displayName="Oncopédiatrie" codeSystem="1.2.250.1.213.1.1.4.2.281" codeSystemName="TA_RCP" />
+              <text>
+                <reference value="#raison-recommandation-oncopediatrie" />
+              </text>
+              <statusCode code="completed" />
+              <effectiveTime nullFlavor="NAV" />
+              <value xsi:type="BL" value="false" />
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13" />
+              <id root="ID0E6UAGRaisonRecommandationRCP" />
+              <code code="RCP_100" displayName="Nature de la discussion" codeSystem="1.2.250.1.213.1.1.4.2.281" codeSystemName="TA_TCP" />
+              <text>
+                <reference value="#raison-recommandation-rcp" />
+              </text>
+              <statusCode code="completed" />
+              <effectiveTime nullFlavor="NAV" />
+              <value xsi:type="CD" code="RCP_112" displayName="RCP Transversale et de soins de support" />
+              <entryRelationship typeCode="SUBJ">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13" />
+                  <id root="ID0E6UAGRaisonRecommandationRCPOncopediatrie" />
+                  <code code="RCP_094" displayName="Oncopédiatrie" codeSystem="1.2.250.1.213.1.1.4.2.281" codeSystemName="TA_RCP" />
+                  <text>
+                    <reference value="#raison-recommandation-rcp-oncopediatrie" />
+                  </text>
+                  <statusCode code="completed" />
+                  <effectiveTime nullFlavor="NAV" />
+                  <value xsi:type="BL" value="false" />
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="SUBJ">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13" />
+                  <id root="ID0E6UAGRaisonRecommandationRCPRecours" />
+                  <code code="RCP_030" displayName="Recours" codeSystem="1.2.250.1.213.1.1.4.2.281" codeSystemName="TA_RCP" />
+                  <text>
+                    <reference value="#raison-recommandation-rcp-recours" />
+                  </text>
+                  <statusCode code="completed" />
+                  <effectiveTime nullFlavor="NAV" />
+                  <value xsi:type="BL" value="false" />
+                </observation>
+              </entryRelationship>
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.1.11" />
+          <templateId root="1.3.6.1.4.1.19376.1.7.3.1.3.14.1" />
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.6" />
+          <id root="ID0E6UAGDiagnosticDuCancer" />
+          <code code="72135-7" displayName="Diagnostic du cancer" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+          <title>Diagnostic du cancer"</title>
+          <text>
+            <table border="1">
+              <thead>
+                <tr>
+                  <th>Classification</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>cTNM</th>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry>
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.27" />
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.1" />
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.2" />
+              <templateId root="1.3.6.1.4.1.19376.1.7.3.1.4.14.1" />
+              <id root="2.25.35414841612607431854917023057881449755.3.5" extension="846139" />
+              <code nullFlavor="NA" />
+              <statusCode code="active" />
+              <effectiveTime>
+                <low value="20220207" />
+              </effectiveTime>
+              <entryRelationship typeCode="SUBJ" inversionInd="false">
+                <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                  <templateId root="2.16.840.1.113883.10.20.1.28" />
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5" />
+                  <templateId root="1.3.6.1.4.1.19376.1.7.3.1.4.14.1" />
+                  <id root="ID0E1PAGDiagnostic" />
+                  <code code="G-1009" displayName="Diagnostic" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5" />
+                  <text>
+                    <reference value="#tumeur-846139" />
+                  </text>
+                  <statusCode code="completed" />
+                  <effectiveTime>
+                    <low value="20220207" />
+                  </effectiveTime>
+                  <value xsi:type="CD">
+                    <originalText>
+                      <reference value="#tumeur-846139" />
+                    </originalText>
+                  </value>
+                  <targetSiteCode codeSystem="2.16.840.1.113883.6.3" codeSystemName="CIM-10" code="C50" displayName="Tumeur maligne du sein">
+                    <qualifier>
+                      <name code="G-C171" displayName="Latéralité" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5" />
+                      <value code="G-A101" codeSystem="1.2.250.1.213.2.12" displayName="Gauche" />
+                    </qualifier>
+                  </targetSiteCode>
+                  <entryRelationship typeCode="SUBJ" inversionInd="false">
+                    <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                      <templateId root="1.3.6.1.4.1.19376.1.7.3.1.4.14.2" />
+                      <code code="21908-9" displayName="Stade TNM clinique" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                      <text>
+                        <reference value="#tumeur-846139-TNM" />
+                      </text>
+                      <statusCode code="completed" />
+                      <effectiveTime nullFlavor="UNK" />
+                      <value xsi:type="CV" nullFlavor="NAV" />
+                      <entryRelationship typeCode="COMP">
+                        <observation classCode="OBS" moodCode="EVN">
+                          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13" />
+                          <id root="ID0E6UAGcT" />
+                          <code code="21905-5" displayName="TNM Clinique T" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                          <text>
+                            <reference value="#tumeur-846139-T" />
+                          </text>
+                          <statusCode code="completed" />
+                          <effectiveTime nullFlavor="NAV" />
+                          <value xsi:type="CV" nullFlavor="NAV" />
+                        </observation>
+                      </entryRelationship>
+                      <entryRelationship typeCode="COMP">
+                        <observation classCode="OBS" moodCode="EVN">
+                          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13" />
+                          <id root="ID0E6UAGcN" />
+                          <code code="21906-3" displayName="TNM Clinique N" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                          <text>
+                            <reference value="#tumeur-846139-N" />
+                          </text>
+                          <statusCode code="completed" />
+                          <effectiveTime nullFlavor="NAV" />
+                          <value xsi:type="CV" nullFlavor="NAV" />
+                        </observation>
+                      </entryRelationship>
+                      <entryRelationship typeCode="COMP">
+                        <observation classCode="OBS" moodCode="EVN">
+                          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13" />
+                          <id root="ID0E6UAGcM" />
+                          <code code="21907-1" displayName="TNM Clinique M" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                          <text>
+                            <reference value="#tumeur-846139-M" />
+                          </text>
+                          <statusCode code="completed" />
+                          <effectiveTime nullFlavor="NAV" />
+                          <value xsi:type="CV" nullFlavor="NAV" />
+                        </observation>
+                      </entryRelationship>
+                    </observation>
+                  </entryRelationship>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.8" />
+          <id root="ID0E6UAGAntecedentsMedicaux" />
+          <code code="11348-0" displayName="Historique des maladies" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+          <title>Antécédents Médicaux</title>
+          <text>
+            <content ID="rcp_antecedents"></content>
+          </text>
+          <entry>
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.27" />
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.1" />
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.2" />
+              <id root="ID0E6UAGAntecedentsMedicauxAct" />
+              <code nullFlavor="NA" />
+              <statusCode code="completed" />
+              <effectiveTime>
+                <low nullFlavor="NAV" />
+                <high nullFlavor="NAV" />
+              </effectiveTime>
+              <entryRelationship typeCode="SUBJ" inversionInd="false">
+                <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                  <templateId root="2.16.840.1.113883.10.20.1.28" />
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5" />
+                  <id root="ID0E6UAGAntecedentsMedicauxDiagnostic" />
+                  <code code="G-1009" displayName="Diagnostic" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5" />
+                  <text>
+                    <reference value="#antecedents-medicaux-diagnostic" />
+                  </text>
+                  <statusCode code="completed" />
+                  <effectiveTime>
+                    <low nullFlavor="NAV" />
+                  </effectiveTime>
+                  <value xsi:type="CD" nullFlavor="NAV">
+                    <originalText>
+                      <reference value="rcp_antecedents" />
+                    </originalText>
+                  </value>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.1.11" />
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.6" />
+          <id root="ID0E6UAGComorbidite" />
+          <code code="11450-4" displayName="Liste des problèmes actifs" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+          <title>Comorbidités</title>
+          <text>
+            <content ID="rcp_comorbidites"></content>
+          </text>
+          <entry>
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.27" />
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.1" />
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.2" />
+              <id root="ID0E6UAGComorbiditeAct" />
+              <code nullFlavor="NA" />
+              <statusCode code="active" />
+              <effectiveTime>
+                <low nullFlavor="NAV" />
+              </effectiveTime>
+              <entryRelationship typeCode="SUBJ" inversionInd="false">
+                <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                  <templateId root="2.16.840.1.113883.10.20.1.28" />
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5" />
+                  <id root="ID0E6UAGComorbiditeDiagnostic" />
+                  <code code="G-1009" displayName="Diagnostic" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5" />
+                  <text>
+                    <reference value="#comorbidite-diagnostic" />
+                  </text>
+                  <statusCode code="completed" />
+                  <effectiveTime>
+                    <low nullFlavor="NAV" />
+                    <high nullFlavor="NAV" />
+                  </effectiveTime>
+                  <value xsi:type="CD" nullFlavor="NAV">
+                    <originalText>
+                      <reference value="rcp_antecedents" />
+                    </originalText>
+                  </value>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.28" />
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.27" />
+          <id root="ID0E6UAGResumeInvestigationPratiquees" />
+          <code code="30954-2" displayName="Résumé des investigations pratiquées" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+          <title>Eléments para-cliniques</title>
+          <text />
+          <entry>
+            <procedure classCode="PROC" moodCode="EVN">
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.19" />
+              <templateId root="2.16.840.1.113883.10.20.1.29" />
+              <id root="ID0E6UAGResumeInvestigationPratiqueesProcedureEntry" />
+              <code code="30954-2" displayName="Résumé des investigations pratiquées" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+              <text>
+                <reference value="#resume-investigations-pratiquees-procedure" />
+              </text>
+              <statusCode code="completed" />
+              <effectiveTime nullFlavor="NAV" />
+            </procedure>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13" />
+              <id root="ID0E6UAGResumeInvestigationPratiqueesObservationEntry" />
+              <code nullFlavor="NAV" />
+              <text>
+                <reference value="#resume-investigations-pratiquees-observation" />
+              </text>
+              <statusCode code="completed" />
+              <effectiveTime nullFlavor="NAV" />
+              <value xsi:type="ST" nullFlavor="UNK" />
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.17" />
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.12.2.1" />
+          <id root="ID0E6UAGEvaluationStatutFonctionnel" />
+          <code code="47420-5" displayName="Evaluation du statut fonctionnel" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+          <title>Évaluation du statut fonctionnel</title>
+          <text />
+          <component>
+            <section>
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.12.2.2" />
+              <id root="ac8531a8-5115-4b78-9d33-432923bb1860" />
+              <code code="38208-5" displayName="Pain severity" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+              <text />
+              <entry>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13" />
+                  <id root="ID0E6UAGEvaluationStatutFonctionnelSectionEvaluationDouleur" />
+                  <code code="38208-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Pain severity" />
+                  <text>
+                    <reference value="#evaluation-douleur" />
+                  </text>
+                  <statusCode code="completed" />
+                  <effectiveTime nullFlavor="UNK" />
+                  <value xsi:type="CO" nullFlavor="UNK" />
+                </observation>
+              </entry>
+            </section>
+          </component>
+          <component>
+            <section>
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.12.2.5" />
+              <id root="ID0E6UAGEvaluationStatutFonctionnelSectionStatutFonctionnel" />
+              <code code="46006-3" displayName="Physiologie et problèmes structuraux" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+              <title>Évaluation du statut fonctionnel</title>
+              <text>
+                <content ID="rcp_evaluation_oncogeriatrique" />
+              </text>
+              <entry>
+                <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13" />
+                  <templateId root="2.16.840.1.113883.10.20.1.31" />
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.12.3.6" />
+                  <id root="ID0E6UAGEvaluationStatutFonctionnelSectionStatutFonctionnelActiviteOMS" />
+                  <code code="RCP_082" displayName="Echelle de performance OMS" codeSystem="1.2.250.1.213.1.1.4.2.281" codeSystemName="TA_RCP" />
+                  <text>
+                    <reference value="#echelle-oms" />
+                  </text>
+                  <statusCode code="completed" />
+                  <effectiveTime nullFlavor="UNK" />
+                  <value xsi:type="CD" code="MED-241" codeSystem="1.2.250.1.213.1.1.4.322" displayName="Capable d'une activité identique à celle précédant la maladie sans aucune restriction." />
+                  <interpretationCode code="MED-241" codeSystem="1.2.250.1.213.1.1.4.322" displayName="Capable d'une activité identique à celle précédant la maladie sans aucune restriction." />
+                </observation>
+              </entry>
+              <entry>
+                <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13" />
+                  <templateId root="2.16.840.1.113883.10.20.1.31" />
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.12.3.6" />
+                  <id root="ID0E6UAGEvaluationStatutFonctionnelSectionStatutFonctionnelEvaluationOncoGeriatrique" />
+                  <code code="RCP_042" displayName="Évaluation onco-gériatrique" codeSystem="1.2.250.1.213.1.1.4.2.281" codeSystemName="TA_RCP" />
+                  <text>
+                    <reference value="#evaluation-onco-geriatrique" />
+                  </text>
+                  <statusCode code="completed" />
+                  <effectiveTime nullFlavor="UNK" />
+                  <value xsi:type="CD" nullFlavor="NAV">
+                    <originalText>
+                      <reference value="#rcp_evaluation_oncogeriatrique" />
+                    </originalText>
+                  </value>
+                </observation>
+              </entry>
+            </section>
+          </component>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.13.2.7" />
+          <templateId root="1.2.250.1.213.1.1.2.25" />
+          <id root="ID0E6UAGNoteProgression" />
+          <code code="18733-6" displayName="Evaluation de la progression" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+          <title>Cas présenté en RCP</title>
+          <text />
+          <entry>
+            <observation classCode="OBS" moodCode="EVN" negationInd="false">
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13" />
+              <id root="ID0E6UAGNoteProgressionPhaseCancer" />
+              <code code="RCP_051" displayName="Phase du cancer" codeSystem="1.2.250.1.213.1.1.4.2.281" codeSystemName="TA_RCP" />
+              <text>
+                <reference value="#note-progression-phase-cancer" />
+              </text>
+              <statusCode code="completed" />
+              <effectiveTime nullFlavor="UNK" />
+              <value xsi:type="CD" nullFlavor="NAV" />
+              <entryRelationship typeCode="SUBJ" inversionInd="true">
+                <act classCode="ACT" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.40" />
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.2" />
+                  <code code="48767-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Annotation Comment" />
+                  <text nullFlavor="NAV" />
+                  <statusCode code="completed" />
+                </act>
+              </entryRelationship>
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN" negationInd="false">
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13" />
+              <id root="ID0E6UAGNoteProgressionProgression" />
+              <code code="RCP_059" codeSystem="1.2.250.1.213.1.1.4.2.281" codeSystemName="TA_RCP" displayName="Progression du cancer" />
+              <text>
+                <reference value="#note-progression-progression" />
+              </text>
+              <statusCode code="completed" />
+              <effectiveTime nullFlavor="UNK" />
+              <value xsi:type="BL" value="true" />
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13" />
+                  <id root="ID0E6UAGNoteProgressionProgressionLocale" />
+                  <code code="RCP_055" displayName="Progression locale du cancer" codeSystem="1.2.250.1.213.1.1.4.2.281" codeSystemName="TA_RCP" />
+                  <text>
+                    <reference value="#note-progressino-progression-locale" />
+                  </text>
+                  <statusCode code="completed" />
+                  <effectiveTime nullFlavor="NAV" />
+                  <value xsi:type="BL" value="false" />
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13" />
+                  <id root="ID0E6UAGNoteProgressionProgressionRegionale" />
+                  <code code="RCP_056" displayName="Progression régionale du cancer" codeSystem="1.2.250.1.213.1.1.4.2.281" codeSystemName="TA_RCP" />
+                  <text>
+                    <reference value="#note-progression-progression-regionale" />
+                  </text>
+                  <statusCode code="completed" />
+                  <effectiveTime nullFlavor="NAV" />
+                  <value xsi:type="BL" value="false" />
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13" />
+                  <id root="ID0E6UAGNoteProgressionProgressionADistance" />
+                  <code code="RCP_057" displayName="Progression à distance du cancer" codeSystem="1.2.250.1.213.1.1.4.2.281" codeSystemName="TA_RCP" />
+                  <text>
+                    <reference value="#note-progression-progression-a-distance" />
+                  </text>
+                  <statusCode code="completed" />
+                  <effectiveTime nullFlavor="NAV" />
+                  <value xsi:type="BL" value="false" />
+                </observation>
+              </entryRelationship>
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.4" />
+          <id root="ID0E6UAGHistoireMaladie" />
+          <code code="10164-2" displayName="Histoire de la maladie" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.1.10" />
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.36" />
+          <id root="ID0E6UAGPlanDeSoins" />
+          <code code="18776-5" displayName="Plan de soins" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+          <title>Proposition de prise en charge</title>
+          <text />
+          <entry>
+            <procedure classCode="PROC" moodCode="INT" negationInd="false">
+              <templateId root="2.16.840.1.113883.10.20.1.25" />
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.19" />
+              <id root="ID0EQ2AG" />
+              <code code="P1-00000" codeSystem="1.2.250.1.213.2.12" displayName="Chirurgie" />
+              <statusCode code="active" />
+              <effectiveTime nullFlavor="NAV" />
+            </procedure>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="1.2.250.1.213.1.1.2.45" />
+          <id root="ID0E6UAGCadrePropositionTherapeutique" />
+          <code code="56447-6" displayName="Note sur le plan de soins" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+          <title>Cadre de la proposition thérapeutique</title>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13" />
+              <id root="ID0E6UAGCadrePropositionTherapeutiqueRecommandation" />
+              <code code="RCP_048" displayName="Recommandation/référentiel de pratique clinique" codeSystem="1.2.250.1.213.1.1.4.2.281" codeSystemName="TA_RCP" />
+              <text>
+                <reference value="#cadre-proposition-therapeutique-recommandation" />
+              </text>
+              <statusCode code="completed" />
+              <effectiveTime nullFlavor="NA" />
+              <value xsi:type="BL" nullFlavor="NAV" />
+              <entryRelationship typeCode="REFR">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13" />
+                  <id root="ID0E6UAGCadrePropositionTherapeutiqueRecommandactionDateVersionReference" />
+                  <code nullFlavor="NA" />
+                  <text>
+                    <reference value="#cadre-proposition-therapeutique-date-version-reference" />
+                  </text>
+                  <statusCode code="completed" />
+                  <effectiveTime nullFlavor="NA" />
+                  <value xsi:type="ST"></value>
+                </observation>
+              </entryRelationship>
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13" />
+              <id root="ID0E6UAGCadrePropositionTherapeutiqueInclusionEssaiClinique" />
+              <code code="RCP_049" displayName="Patient pouvant être inclus dans un essai clinique" codeSystem="1.2.250.1.213.1.1.4.2.281" codeSystemName="TA_RCP" />
+              <text>
+                <reference value="#cadre-proposition-therapeutique-inclusion-essai-clinique" />
+              </text>
+              <statusCode code="completed" />
+              <effectiveTime nullFlavor="NA" />
+              <value xsi:type="BL" nullFlavor="NAV" />
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="1.2.250.1.213.1.1.2.33" />
+          <id root="ID0E6UAGStatutRCP" />
+          <code code="21874-3" displayName="Statut du cas présenté et quorum" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+          <title>Statut du cas présenté et quorum</title>
+          <text />
+          <entry>
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="1.2.250.1.213.1.1.3.7" />
+              <code code="RCP_101" displayName="Information RCP" codeSystem="1.2.250.1.213.1.1.4.2.281" codeSystemName="TA_RCP" />
+              <statusCode code="completed" />
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13" />
+                  <id root="ID0E6UAGStatutRCPDossierComplet" />
+                  <code code="RCP_121" displayName="Dossier complet" codeSystem="1.2.250.1.213.1.1.4.2.281" codeSystemName="TA_RCP" />
+                  <text>
+                    <reference value="#statut-rcp-dossier-complet" />
+                  </text>
+                  <statusCode code="completed" />
+                  <effectiveTime nullFlavor="NAV" />
+                  <value xsi:type="BL" value="true" />
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13" />
+                  <id root="ID0E6UAGStatutRCPQuorum" />
+                  <code code="RCP_086" displayName="Quorum RCP" codeSystem="1.2.250.1.213.1.1.4.2.281" codeSystemName="TA_RCP" />
+                  <text>
+                    <reference value="#statut-rcp-quorum" />
+                  </text>
+                  <statusCode code="completed" />
+                  <effectiveTime nullFlavor="NAV" />
+                  <value xsi:type="CD" nullFlavor="UNK" />
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13" />
+                  <id root="ID0E6UAGStatutRCPStatutDuCasPresente" />
+                  <code code="RCP_087" displayName="Statut du cas présenté" codeSystem="1.2.250.1.213.1.1.4.2.281" codeSystemName="TA_RCP" />
+                  <text>
+                    <reference value="#statut-rcp-statut-cas-presente" />
+                  </text>
+                  <statusCode code="completed" />
+                  <effectiveTime nullFlavor="NAV" />
+                  <value xsi:type="CD" code="RCP_092" codeSystem="1.2.250.1.213.1.1.4.2.281" displayName="Cas discuté" />
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13" />
+                  <id root="ID0E6UAGStatutRCPContexteUrgence" />
+                  <code code="RCP_088" displayName="Contexte d'urgence" codeSystem="1.2.250.1.213.1.1.4.2.281" codeSystemName="TA_RCP" />
+                  <text>
+                    <reference value="#statut-rcp-contexte-urgence" />
+                  </text>
+                  <statusCode code="completed" />
+                  <effectiveTime nullFlavor="NAV" />
+                  <value xsi:type="BL" nullFlavor="NAV" />
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="1.2.250.1.213.1.1.2.35" />
+          <id root="ID0E6UAGStatutDocument" />
+          <code code="33557-0" displayName="Niveau de complétion" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+          <title>Statut du document</title>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13" />
+              <id />
+              <code code="CDA_001" displayName="Statut du document" codeSystem="1.2.250.1.213.1.1.4.2.286" codeSystemName="TA_CDA" />
+              <text>
+                <reference value="#statut-document" />
+              </text>
+              <statusCode code="completed" />
+              <effectiveTime value="20220207" />
+              <value xsi:type="CD" code="CDA_004" displayName="Validé" codeSystem="1.2.250.1.213.1.1.4.2.286" />
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="1.2.250.1.213.1.1.2.34" />
+          <id root="ID0EBYAGResumeInvestigationsPratiquees" />
+          <code code="30954-2" displayName="Résumé des investigations pratiquées" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+          <title>Importation du compte rendu ACP</title>
+          <text />
+          <component>
+            <section>
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.13.2.11" />
+              <code code="29554-3" displayName="Intervention" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+              <text />
+              <entry>
+                <procedure classCode="PROC" moodCode="EVN">
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.19" />
+                  <templateId root="2.16.840.1.113883.10.20.1.29" />
+                  <id root="ID0EBYAGPrelevementEchantillon" />
+                  <code code="P3-02000" displayName="Prélèvement d'échantillon" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5" />
+                  <text>
+                    <reference value="#ID0EBYAG-prelevement-echantillon" />
+                  </text>
+                  <statusCode code="completed" />
+                  <effectiveTime nullFlavor="NAV" />
+                </procedure>
+              </entry>
+              <entry>
+                <procedure classCode="PROC" moodCode="EVN">
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.19" />
+                  <templateId root="2.16.840.1.113883.10.20.1.29" />
+                  <id root="ID0EBYAGExamenMicroscopique" />
+                  <code code="P3_44440" displayName="Examen microscopique et diagnostique d'un spécimen chirurgical préalablement traité" codeSystem="1.2.250.1.213.2.12" codeSystemName="SNOMED 3.5" />
+                  <text>
+                    <reference value="#ID0EBYAG-examen-microscopique" />
+                  </text>
+                  <statusCode code="completed" />
+                  <effectiveTime>
+                    <low value="20211214" />
+                  </effectiveTime>
+                </procedure>
+              </entry>
+            </section>
+          </component>
+          <component>
+            <section>
+              <templateId root="1.3.6.1.4.1.19376.1.8.1.2.5" />
+              <code code="22637-3" displayName="Conclusion - Diagnostic" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+              <title>Conclusion du compte-rendu anatomo-cyto-pathologique (ACP)</title>
+              <text>CINST grade II. Ki67 à 50 %, RO + RP, Her2 négatif.</text>
+              <author>
+                <time nullFlavor="NAV" />
+                <assignedAuthor>
+                  <id root="1.2.250.1.71.4.2.1" assigningAuthorityName="ASIP Santé" extension="8fake2727344" />
+                  <code code="G15_10/SM20" displayName="Gynécologie-obstétrique" codeSystem="1.2.250.1.213.1.1.4.5" />
+                </assignedAuthor>
+              </author>
+            </section>
+          </component>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.25.35414841612607431854917023057881449755.3" />
+          <id root="ID0E6UAGDonneesMedicalesKProcess" />
+          <title>Informations médicales brutes de K-Process</title>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <id root="ID0EPXAGDonneesMedicalesKProcessObservationInstance" />
+              <code code="FicheRCP" />
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <id root="ID0EVXAGDonneesMedicalesKProcessObservationInstance" />
+                  <code code="DocumentRefs" />
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <id root="ID0E2XAGDonneesMedicalesKProcessObservationInstance" />
+                  <code code="Histologies" />
+                  <entryRelationship typeCode="COMP">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <id root="ID0EBYAGDonneesMedicalesKProcessObservationInstance" />
+                      <code code="Histologie" />
+                      <entryRelationship typeCode="COMP">
+                        <observation classCode="OBS" moodCode="EVN">
+                          <id root="ID0EHYAGDonneesMedicalesKProcessObservationInstance" />
+                          <code code="DatePrelevement" />
+                          <value xsi:type="ST">2022-01-17T00:00:00</value>
+                        </observation>
+                      </entryRelationship>
+                      <entryRelationship typeCode="COMP">
+                        <observation classCode="OBS" moodCode="EVN">
+                          <id root="ID0EMYAGDonneesMedicalesKProcessObservationInstance" />
+                          <code code="Histologie.Nature" />
+                          <value xsi:type="ST">biopsie mammaire</value>
+                        </observation>
+                      </entryRelationship>
+                      <entryRelationship typeCode="COMP">
+                        <observation classCode="OBS" moodCode="EVN">
+                          <id root="ID0ERYAGDonneesMedicalesKProcessObservationInstance" />
+                          <code code="Histologie.TypeHistologique" />
+                          <value xsi:type="ST">carcinome NST grade III, RH-HER2+++, Ki67%</value>
+                        </observation>
+                      </entryRelationship>
+
+
+
+
+
+                    </observation>
+                  </entryRelationship>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <id root="ID0EYYAGDonneesMedicalesKProcessObservationInstance" />
+                  <code code="FicheRCP.MotifRCP" />
+                  <value xsi:type="ST">PremierePropositionDeTraitement</value>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <id root="ID0E6YAGDonneesMedicalesKProcessObservationInstance" />
+                  <code code="FicheRCP.ATCD_Comorbidite_Traitement" />
+                  <value xsi:type="ST">aucun</value>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <id root="ID0EEZAGDonneesMedicalesKProcessObservationInstance" />
+                  <code code="FicheRCP.HistoireMaladie" />
+                  <value xsi:type="ST">Autopalpation masse QSE sein G. Mammographie montrant une masse ACR5 de 52mm. Biopsie en faveur d'un carcinome NOS grade III, RH-HER2+. Début d'une chimiothérapie néoadjuvante par 4EC, 12 Taxol Herceptin</value>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <id root="ID0EMZAIDonneesMedicalesKProcessObservationInstance" />
+                  <code code="FicheRCP.ModeDecouverte" />
+                  <value xsi:type="ST"></value>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <id root="ID0EJZAGDonneesMedicalesKProcessObservationInstance" />
+                  <code code="Oncogeriatrie" />
+                  <entryRelationship typeCode="COMP">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <id root="ID0EPZAGDonneesMedicalesKProcessObservationInstance" />
+                      <code code="FOG" />
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship typeCode="COMP">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <id root="ID0EVZAGDonneesMedicalesKProcessObservationInstance" />
+                      <code code="ScoreG8" />
+                    </observation>
+                  </entryRelationship>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <id root="ID0E3ZAGDonneesMedicalesKProcessObservationInstance" />
+                  <code code="CTNM" />
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <id root="ID0EN1AIDonneesMedicalesKProcessObservationInstance" />
+                  <code code="CTNM" />
+                  <entryRelationship typeCode="COMP">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <id root="ID0ET1AIDonneesMedicalesKProcessObservationInstance" />
+                      <code code="T" />
+                      <value xsi:type="ST">T3</value>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship typeCode="COMP">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <id root="ID0E41AIDonneesMedicalesKProcessObservationInstance" />
+                      <code code="N" />
+                      <value xsi:type="ST">N2</value>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship typeCode="COMP">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <id root="ID0E41AIDonneesMedicalesKProcessObservationInstance" />
+                      <code code="M" />
+                      <value xsi:type="ST">M0</value>
+                    </observation>
+                  </entryRelationship>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <id root="ID0EI2AIDonneesMedicalesKProcessObservationInstance" />
+                  <code code="ActiviteOMS" />
+                  <value xsi:type="ST"></value>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <id root="ID0EW1AGDonneesMedicalesKProcessObservationInstance" />
+                  <code code="FicheRCP.Question" />
+                  <value xsi:type="ST"></value>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <id root="ID0E41AGDonneesMedicalesKProcessObservationInstance" />
+                  <code code="FicheRCP.DepistageDeficitDPD" />
+                  <value xsi:type="ST"></value>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <id root="ID0EO5AIDonneesMedicalesKProcessObservationInstance" />
+                  <code code="FicheRCP.PhaseMaladie" />
+                  <value xsi:type="ST"></value>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <id root="ID0EE2AGDonneesMedicalesKProcessObservationInstance" />
+                  <code code="PlanTraitements" />
+                  <entryRelationship typeCode="COMP">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <id root="ID0E62AIDonneesMedicalesKProcessObservationInstance" />
+                      <code code="PlanTraitements.Traitements" />
+                      <entryRelationship typeCode="COMP">
+                        <observation classCode="OBS" moodCode="EVN">
+                          <id root="ID0EF3AIDonneesMedicalesKProcessObservationInstance" />
+                          <code code="PlanTraitements.Traitement" />
+                          <entryRelationship typeCode="COMP">
+                            <observation classCode="OBS" moodCode="EVN">
+                              <id root="ID0EL3AIDonneesMedicalesKProcessObservationInstance" />
+                              <code code="Traitement.TypeTraitement" />
+                              <value xsi:type="ST">Chimiothérapie</value>
+                            </observation>
+                          </entryRelationship>
+                          <entryRelationship typeCode="COMP">
+                            <observation classCode="OBS" moodCode="EVN">
+                              <id root="ID0EV3AIDonneesMedicalesKProcessObservationInstance" />
+                              <code code="PlanTraitements.Traitement.Categorie" />
+                              <value xsi:type="ST">EnCours </value>
+                            </observation>
+                          </entryRelationship>
+                        </observation>
+                      </entryRelationship>
+
+
+
+	              <entryRelationship typeCode="COMP">
+                        <observation classCode="OBS" moodCode="EVN">
+                          <id root="ID0E62AIDonneesMedicalesKProcessObservationInstance" />
+                          <code code="PlanTraitements.Traitements" />
+                          <entryRelationship typeCode="COMP">
+                            <observation classCode="OBS" moodCode="EVN">
+                              <id root="ID0EF3AIDonneesMedicalesKProcessObservationInstance" />
+                              <code code="PlanTraitements.Traitement" />
+                              <entryRelationship typeCode="COMP">
+                                <observation classCode="OBS" moodCode="EVN">
+                                  <id root="ID0EL3AIDonneesMedicalesKProcessObservationInstance" />
+                                  <code code="Traitement.TypeTraitement" />
+                                  <value xsi:type="ST">Chirurgie</value>
+                                </observation>
+                              </entryRelationship>
+                              <entryRelationship typeCode="COMP">
+                                <observation classCode="OBS" moodCode="EVN">
+                                  <id root="ID0EV3AIDonneesMedicalesKProcessObservationInstance" />
+                                  <code code="PlanTraitements.Traitement.Categorie" />
+                                  <value xsi:type="ST">NonOrdonne</value>
+                                </observation>
+                              </entryRelationship>
+                            </observation>
+                          </entryRelationship>
+                        </observation>
+                      </entryRelationship>
+	              <entryRelationship typeCode="COMP">
+                        <observation classCode="OBS" moodCode="EVN">
+                          <id root="ID0E62AIDonneesMedicalesKProcessObservationInstance" />
+                          <code code="PlanTraitements.Traitements" />
+                          <entryRelationship typeCode="COMP">
+                            <observation classCode="OBS" moodCode="EVN">
+                              <id root="ID0EF3AIDonneesMedicalesKProcessObservationInstance" />
+                              <code code="PlanTraitements.Traitement" />
+                              <entryRelationship typeCode="COMP">
+                                <observation classCode="OBS" moodCode="EVN">
+                                  <id root="ID0EL3AIDonneesMedicalesKProcessObservationInstance" />
+                                  <code code="Traitement.TypeTraitement" />
+                                  <value xsi:type="ST">Radiothérapie</value>
+                                </observation>
+                              </entryRelationship>
+                              <entryRelationship typeCode="COMP">
+                                <observation classCode="OBS" moodCode="EVN">
+                                  <id root="ID0EV3AIDonneesMedicalesKProcessObservationInstance" />
+                                  <code code="PlanTraitements.Traitement.Categorie" />
+                                  <value xsi:type="ST">NonOrdonne</value>
+                                </observation>
+                              </entryRelationship>
+                            </observation>
+                          </entryRelationship>
+                        </observation>
+                      </entryRelationship>
+
+
+		    </observation>
+                  </entryRelationship>
+		</observation>
+              </entryRelationship>
+              <entryRelationship typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <id root="ID0EJ5AIDonneesMedicalesKProcessObservationInstance" />
+                  <code code="FicheRCP.DescriptionPlanTraitement" />
+                  <value xsi:type="ST">Chimiothérapie néoadjuvante par 2 EC, 12 Taxol Herceptin</value>
+                </observation>
+              </entryRelationship>
+            </observation>
+          </entry>
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>
