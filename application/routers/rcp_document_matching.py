@@ -17,3 +17,17 @@ async def frcp_document_route(frcpdoc: FRCP):
     """
     document_res = frcp_service.match(frcpdoc)
     return document_res
+
+
+@router.post("/related/")
+async def frcp_related_route(frcpdoc: FRCP):
+    """_summary_
+
+    Args:
+        frcpdoc (FRCP): _description_
+
+    Returns:
+        _type_: _description_
+    """
+    document_res = frcp_service.match_related(frcpdoc)
+    return document_res

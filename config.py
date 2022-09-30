@@ -5,5 +5,6 @@ class Config:
     API_VERSION = "0.1.0"
     API_DEBUG_MODE = True
     MEDICS_URL_API = "https://search-medics-faq-api-dev-jwtwih6oja-ew.a.run.app"
-    SVE_URL_API = "https://search-vector-engine-api-dev-jwtwih6oja-ew.a.run.app"
+    SVE_URL_API = "https://search-vector-engine-api.k8s-dev.360medics.com"
     baseURI = "https://guepard-rd360.360medics.com"
+    baseURIPROD = "https://prod-api-rd360.360medics.com"
