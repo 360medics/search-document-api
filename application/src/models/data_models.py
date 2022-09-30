@@ -35,6 +35,7 @@ class FRCP(BaseModel):
     Question: str = None
     OMS: str = None
     Decouverte: str = None
+    Patho: str = None
     PhaseMaladie: str = None
     DPD: str = None
     TypeTT: str = None
