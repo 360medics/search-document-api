@@ -30,18 +30,7 @@ class FRCPService:
             for elem in search_res
         ]
 
-        search_reco = (
-            search_res[:1]
-            + [
-                {
-                    "Related Questions": [
-                        f"Classification TNM {document.Patho}",
-                        f"Traitement {document.Patho}",
-                    ]
-                }
-            ]
-            + search_res[2:6]
-        )
+        search_reco = search_res[:1] + search_res[2:6]
 
         sve_res = get_sve(document.HDM)[:3]
 
@@ -49,6 +38,7 @@ class FRCPService:
             {
                 "title": elem.get("data").get("title"),
                 "url": elem.get("data").get("document").get("url"),
+                "logo": elem.get("data").get("source").get("logo"),
                 "from": "search sem",
             }
             for elem in sve_res

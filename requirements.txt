@@ -6,3 +6,4 @@ python-dotenv
 elasticsearch
 pytest
 requests
+Unidecode

@@ -25,7 +25,7 @@ payload = json.dumps(
 )
 
 
-def get_search(text):
+def get_search(text, env="dev"):
     params = {
         "lang": "fr",
         "q": text,
@@ -52,7 +52,10 @@ def get_search(text):
         "X-User-Api-Key": "1ade9001222a075902bc1ea12e0dc643",
     }
     resp = requests.post(
-        f"{Config.baseURI}/v3/search/tool", params=params, json=body, headers=headers
+        f"{Config.baseURI if (env == 'dev') else Config.baseURIPROD}/v3/search/all",
+        params=params,
+        json=body,
+        headers=headers,
     )
     return json.loads(resp.content.decode("utf-8")).get("results")
 
@@ -106,7 +109,10 @@ def get_sve(text):
 
     logger.debug(resp)
 
-    return json.loads(resp.content.decode("utf-8")).get("results")
+    if str(resp.status_code) == "200":
+        return json.loads(resp.content.decode("utf-8")).get("results")
+
+    return []
 
 
 def get_direct_es(text):
